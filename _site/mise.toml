@@ -1,0 +1,5 @@
+[tasks.serve]
+description = "Serve app"
+run = [
+    "./jekyll_serve.sh",
+]

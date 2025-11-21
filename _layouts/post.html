@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.image %}
+<meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
+{% endif %}
+
+<article itemscope itemtype='http://schema.org/BlogPosting'>
+  <div class="post-header">
+    <time class="post-date" datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date:
+      '%d %b %Y'
+      }}</time>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% for tag in page.tags %}
+    <a class="post-tag" href='{{ site.baseurl }}/tag/{{ tag }}/'>{{ tag }}</a>
+    {% endfor %}
+  </div>
+
+
+  {% include page-image.html %}
+
+  {{ content }}
+
+</article>

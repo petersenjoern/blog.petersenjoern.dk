@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+{% include post-card.liquid %}
+{% endfor %}
+
+{% include pagination.html %}

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div>
+  Posts with tag '{{ page.tag }}'
+</div>
+
+{% for post in page.posts %}
+{% include post-card.liquid %}
+{% endfor %}
+
+{% include pagination.html %}

@@ -8,7 +8,7 @@
 # Site settings
 title:       Jörn Petersen's blog
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://blog.jpetersen.dk' # The base hostname & protocol for your site
+url:         'https://petersenjoern.github.io/blog.petersenjoern.dk/' # The base hostname & protocol for your site
 
 markdown:  kramdown
 permalink: pretty
